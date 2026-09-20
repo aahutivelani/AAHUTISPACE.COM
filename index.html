@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>aahutispace.</title>
+  <meta name="description" content="A little corner of the internet for brains, thoughts & everything in between.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain"></div>
+
+  <header class="nav">
+    <a class="logo" href="#top">aahutispace<span>.</span></a>
+    <nav>
+      <a href="#blog">blog</a>
+      <a href="#about">about</a>
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle night mode">☾</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="sticker star">✦</div>
+      <div class="sticker smile">⌣</div>
+      <div class="hero-copy">
+        <p class="eyebrow">a tiny corner of the internet ✷</p>
+        <h1>brains, thoughts<br>& everything <em>in between.</em></h1>
+        <p class="intro">A collection of curious observations about psychology, human behaviour, identity, and all the wonderfully weird things our brains do.</p>
+        <div class="hero-actions">
+          <a class="button" href="#blog">explore the blog →</a>
+          <button class="text-button" id="thoughtBtn">☁ give me a thought</button>
+        </div>
+      </div>
+      <div class="hero-card">
+        <span class="tiny-label">currently thinking about...</span>
+        <p id="thought">why can you remember an embarrassing moment from four years ago but forget what you had for lunch yesterday?</p>
+        <span class="scribble">hmm.</span>
+      </div>
+    </section>
+
+    <section class="marquee">
+      <span>psychology ✦ human behaviour ✦ cognitive biases ✦ identity ✦ curiosity ✦ psychology ✦ human behaviour ✦</span>
+    </section>
+
+    <section class="section" id="blog">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">the blog</p>
+          <h2>things i've been<br><em>thinking about.</em></h2>
+        </div>
+        <div class="filters" id="filters">
+          <button class="filter active" data-filter="all">all</button>
+          <button class="filter" data-filter="psychology">psychology</button>
+          <button class="filter" data-filter="thoughts">thoughts</button>
+          <button class="filter" data-filter="brain">brain</button>
+        </div>
+      </div>
+
+      <div class="search-row">
+        <input id="search" type="search" placeholder="search the little universe..." aria-label="Search articles">
+        <span id="count"></span>
+      </div>
+
+      <div class="posts" id="posts"></div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-note">
+        <span class="tape"></span>
+        <p class="eyebrow">a little about this place</p>
+        <h2>curiosity is<br><em>kind of the point.</em></h2>
+      </div>
+      <div class="about-copy">
+        <p><strong>hi, i'm aahuti.</strong></p>
+        <p>aahutispace. is my little internet corner for writing about brains, psychology, human behaviour, identity, and the strange thoughts that appear when you're supposed to be sleeping.</p>
+        <p>It's not a textbook. It's not therapy. It's just one curious person trying to understand people — including herself — a little better.</p>
+        <div class="mini-tags">
+          <span>🧠 brain things</span><span>☁ thoughts</span><span>📖 essays</span><span>✦ psychology</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo">aahutispace<span>.</span></div>
+    <p>made with curiosity & a questionable number of tabs open.</p>
+    <a href="#top">back to top ↑</a>
+  </footer>
+
+  <dialog id="articleDialog">
+    <button class="close" id="closeArticle">×</button>
+    <div id="articleContent"></div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
