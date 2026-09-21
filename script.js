@@ -1,4 +1,4 @@
-const posts = [const posts = [
+const posts = [
   {
     id:1,
     category:"psychology",
@@ -135,26 +135,6 @@ const posts = [const posts = [
     `
   }
 ];
-  ,
-  {
-    id:2, category:"brain", read:"2 min read",
-    title:"Why does your brain remember embarrassing things?",
-    excerpt:"Your brain isn't keeping a personal archive just to bully you. Probably.",
-    body:`<p>Some memories seem to have an unfair amount of storage space in our heads. One awkward moment from years ago can suddenly appear in perfect detail.</p><p>Emotion can make an experience feel especially memorable, and memories are not recordings of the past. Each time we remember something, our brain reconstructs it.</p><p>So no, your brain probably isn't deliberately torturing you. It is doing something much more ordinary — deciding what feels important enough to revisit.</p>`
-  },
-  {
-    id:3, category:"thoughts", read:"3 min read",
-    title:"Maybe we aren't who we think we are",
-    excerpt:"How much of our identity is actually us — and how much is the story we've built?",
-    body:`<p>We spend an enormous amount of time constructing a picture of ourselves. I'm shy. I'm ambitious. I'm bad at maths. I'm the funny friend. I'm a morning person.</p><p>But people are context-sensitive. The version of you who talks for hours with a best friend can look very different from the version of you sitting silently in a new room.</p><p>Maybe identity isn't one fixed object waiting to be discovered. Maybe it's a story that keeps being edited.</p>`
-  },
-  {
-    id:4, category:"psychology", read:"5 min read",
-    title:"The strange psychology of friendship",
-    excerpt:"Why do some people become part of our everyday lives almost without us noticing?",
-    body:`<p>Friendship can look effortless from the outside, but it is built from hundreds of tiny interactions: shared routines, repeated conversations, inside jokes and moments of being understood.</p><p>Our social brains are constantly tracking familiarity and trust. That doesn't make friendship mechanical. If anything, it makes the ordinary parts feel more fascinating.</p><p>A person can become important through a thousand tiny moments rather than one dramatic one.</p>`
-  }
-];
 
 const postsEl=document.getElementById("posts");
 const search=document.getElementById("search");
@@ -174,6 +154,7 @@ function render(){
   count.textContent=`${filtered.length} ${filtered.length===1?"post":"posts"}`;
   document.querySelectorAll(".post").forEach(el=>el.onclick=()=>openArticle(+el.dataset.id));
 }
+
 function openArticle(id){
   const p=posts.find(x=>x.id===id);
   document.getElementById("articleContent").innerHTML=`
@@ -182,12 +163,20 @@ function openArticle(id){
     <div class="article-body">${p.body}</div>`;
   document.getElementById("articleDialog").showModal();
 }
+
 document.getElementById("closeArticle").onclick=()=>document.getElementById("articleDialog").close();
-document.getElementById("articleDialog").addEventListener("click",e=>{if(e.target.id==="articleDialog")e.target.close()});
+
+document.getElementById("articleDialog").addEventListener("click",e=>{
+  if(e.target.id==="articleDialog")e.target.close()
+});
+
 document.querySelectorAll(".filter").forEach(btn=>btn.onclick=()=>{
   document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active"));
-  btn.classList.add("active"); active=btn.dataset.filter; render();
+  btn.classList.add("active");
+  active=btn.dataset.filter;
+  render();
 });
+
 search.oninput=render;
 
 const thoughts=[
@@ -197,13 +186,21 @@ const thoughts=[
  "what if being curious is more useful than always being certain?",
  "why do we judge a person in seconds and then spend months proving ourselves right?"
 ];
+
 document.getElementById("thoughtBtn").onclick=()=>{
  const el=document.getElementById("thought");
- el.style.opacity=0; setTimeout(()=>{el.textContent=thoughts[Math.floor(Math.random()*thoughts.length)];el.style.opacity=1},180);
+ el.style.opacity=0;
+ setTimeout(()=>{
+   el.textContent=thoughts[Math.floor(Math.random()*thoughts.length)];
+   el.style.opacity=1
+ },180);
 };
+
 document.getElementById("themeBtn").onclick=()=>{
  document.body.classList.toggle("dark");
  localStorage.setItem("aahuti-dark",document.body.classList.contains("dark"));
 };
+
 if(localStorage.getItem("aahuti-dark")==="true")document.body.classList.add("dark");
+
 render();
