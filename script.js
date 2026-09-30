@@ -256,10 +256,35 @@ function render(){
 
 function openArticle(id){
   const p=posts.find(x=>x.id===id);
+
   document.getElementById("articleContent").innerHTML=`
     <div class="article-tag">${p.category} · ${p.read}</div>
     <h2 class="article-title">${p.title}</h2>
-    <div class="article-body">${p.body}</div>`;
+    <div class="article-body">${p.body}</div>
+    <div id="giscus-container"></div>
+  `;
+
+  const giscusContainer=document.getElementById("giscus-container");
+
+  const script=document.createElement("script");
+  script.src="https://giscus.app/client.js";
+  script.setAttribute("data-repo","aahutivelani/AAHUTISPACE.COM");
+  script.setAttribute("data-repo-id","R_kgDOUiqsIg");
+  script.setAttribute("data-category","COMMENTS");
+  script.setAttribute("data-category-id","DIC_kwDOUiqsIs4DGwWK");
+  script.setAttribute("data-mapping","specific");
+  script.setAttribute("data-term",`aahutispace-post-${p.id}`);
+  script.setAttribute("data-strict","0");
+  script.setAttribute("data-reactions-enabled","1");
+  script.setAttribute("data-emit-metadata","0");
+  script.setAttribute("data-input-position","bottom");
+  script.setAttribute("data-theme","preferred_color_scheme");
+  script.setAttribute("data-lang","en");
+  script.setAttribute("crossorigin","anonymous");
+  script.async=true;
+
+  giscusContainer.appendChild(script);
+
   document.getElementById("articleDialog").showModal();
 }
 
