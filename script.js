@@ -133,6 +133,105 @@ const posts = [
 
       <p><strong>As I leave with a final thought, dear reader, our phones have become smart but let it not be cost of us becoming the opposite.</strong></p>
     `
+  },
+
+  {
+    id:3,
+    category:"psychology",
+    read:"8 min read",
+    title:"The Psychological Impact of Long-Term Solitary Confinement",
+    excerpt:"What happens to the human mind when ordinary sources of stimulation, connection and interaction disappear?",
+    body:`
+      <p>Imagine being placed in a room where nothing is necessarily happening to you—yet, slowly, your own mind becomes the most stimulating thing in the room.</p>
+
+      <p>Solitary confinement is a form of imprisonment where a person is kept in a single cell alone for 22 to 24 hours a day, with little or no human contact. Usually a form of punishment or detention for prisoners, its effects last longer than simply during the confinement. <strong>[1]</strong></p>
+
+      <p><em>Image above shows confinement in a prison.</em></p>
+
+      <p>Conditions for such confinement include strict restrictions on contact with other people.</p>
+
+      <p>In this blog, we shall focus on the psychological effects of long-term solitary confinement on a person’s mental health.</p>
+
+      <p>A case study was carried out in Oregon regarding the conditions and results of solitary confinement, and the results were as follows: Self-injury and suicide attempts were prevalent among participants. According to administrative records, nearly one-quarter (22.7%) of ORT participants had engaged in at least one act of self-injury that was serious enough to require medical attention during their imprisonment. Over one-quarter (26.7%) of the 44 ORT participants had been subjected to at least one documented use-of-force incident during their current incarceration, for a total of 53 incidents. <strong>[2]</strong></p>
+
+      <p>These studies depict that deprivation of connection and interaction can pose several threats to mental health and, in some extreme cases, lead to an existential crisis. Psychologists have used the term <strong>SHU syndrome</strong>, or <strong>Security Housing Unit syndrome</strong>, to describe a range of psychological effects associated with prolonged isolation. It can include vivid perceptual experiences such as visual, olfactory, or auditory hallucinations. <strong>[3]</strong></p>
+
+      <p>We humans are social animals; a phrase often used, but what does it really mean?</p>
+
+      <p>Humans are social animals not simply because we enjoy company, but because interaction with others provides continuous stimulation, information, emotional feedback, and a sense of belonging. Prolonged isolation therefore removes more than physical company—it removes many of the ordinary inputs our minds constantly process. It deprives the brain of sensory stimulation and arouses the stress response. Since our identity is formed and shaped by the emotional feedback we receive, our sense of self can also be disturbed. Prolonged isolation can confuse our sense of self and disturb our perception of time. Such a person may end up exhausted, frustrated, and lonely, often questioning their smallest decisions and replaying memories in their head.</p>
+
+      <p>To understand how a person would truly feel, I tried the experiment myself.</p>
+
+      <h3>CONDITIONS</h3>
+
+      <p>A closed room with closed curtains to avoid any sensory stimulation, with no human connection.</p>
+
+      <h3>AIM</h3>
+
+      <p>To stay in the room for 24 hours.</p>
+
+      <h3>THINGS ALLOWED</h3>
+
+      <p>2 bottles of water and a camera to record my thoughts.</p>
+
+      <h3>MY EXPERIENCE</h3>
+
+      <img src="images/solitary-confinement-experiment.jpg" alt="The room used for my 8-hour personal isolation experiment">
+
+      <p><em>The room where I conducted my 8-hour personal isolation experiment.</em></p>
+
+      <p>I definitely did not end up staying in the room for 24 hours. In fact, I stayed for 8 hours in the room, thankfully still sane.</p>
+
+      <p>For the first three hours, I was extremely bored since usually I would be on my phone or laptop, surrounded by music, smells, and everything else. I eventually grew aware of the time passing slowly and honestly even thought of quitting so many times.</p>
+
+      <p>At first, the silence was simply boring. There was nothing particularly uncomfortable about it. I just noticed how quickly I began looking for something to do. After a while, that boredom turned into frustration. Without my usual distractions and stimulation, even small things around me suddenly became noticeable—the sounds in the room, tiny movements, and objects I would normally ignore.</p>
+
+      <p>What surprised me most was how much my attention began searching for something, anything, to focus on. A room that had seemed completely ordinary suddenly felt filled with details I had never paid attention to. Yet none of them were enough to replace the constant stream of stimulation I was used to. I paid attention to the train sounds near my house and acknowledged small details of the room I had never noticed before.</p>
+
+      <p>The experience made me realise that boredom is not simply the absence of something interesting. When there is very little external stimulation, the mind actively starts looking for it.</p>
+
+      <p>For the first three hours, I was kind of energetic since I had freshly started, but eventually my mood became dim. During my stay, I began to understand how a prisoner or juvenile offender in such a condition might feel. I began replaying small things in my head about my day, and my thoughts became loud.</p>
+
+      <p>Though in my experience, I could see an important difference, since I had voluntarily chosen to try such an experiment and the individuals in such confinement might be there involuntarily. However, I noticed a few common things:</p>
+
+      <p><strong>Loneliness</strong></p>
+      <p><strong>Boredom</strong></p>
+      <p><strong>Negative thoughts</strong></p>
+
+      <p>I believe these were my thoughts in merely 8 hours of the experiment. I realised the impact and change in mood over the gradual shift of time.</p>
+
+      <p>Of course, this was only a short personal experience and cannot be compared directly with prolonged institutional solitary confinement. But it gave me a small glimpse into something the research repeatedly raises: <strong>the human mind does not simply stop when stimulation disappears—it starts searching for it.</strong></p>
+
+      <h3>WHERE IS SOLITARY CONFINEMENT USED?</h3>
+
+      <p>Solitary confinement is used for:</p>
+
+      <p>1. <strong>Safety purposes</strong> — to separate individuals who are considered a threat to others or themselves.</p>
+
+      <p>2. <strong>Disciplinary purposes</strong> — as a form of punishment within some correctional systems.</p>
+
+      <p>3. <strong>Pre-trial detention</strong> — in some systems, people may be held in highly restricted conditions while awaiting trial.</p>
+
+      <p>4. <strong>Juvenile detention</strong> — restrictive isolation has also been documented in some juvenile detention settings, although its use is subject to legal and institutional restrictions that vary by jurisdiction.</p>
+
+      <p>Solitary confinement is often described in terms of physical separation: one person, one room, very little or no meaningful contact with the outside world. But the research suggests that its significance goes much deeper than simply being alone. When ordinary sources of social, sensory, and mental stimulation are removed, the mind is left with far less information to process and think about—and that absence can have psychological consequences.</p>
+
+      <p>The Oregon case study helped demonstrate how profoundly isolation can affect psychological functioning, while the wider research shows that factors such as duration, environment, and individual differences matter when understanding these effects. My own experience, although very short and nowhere near comparable to institutional solitary confinement, made one part of this easier to understand personally. Even a short period without my usual stimulation made boredom increase, frustration appear, and insignificant details suddenly become noticeable.</p>
+
+      <p>Perhaps the most interesting thing about isolation is that the room itself does not necessarily have to change. The way we experience it can.</p>
+
+      <p>We spend most of our lives surrounded by conversations, sounds, information, movement, and people without consciously noticing how much our minds depend on that constant stream of input. Remove it, and the absence itself becomes something the brain has to process.</p>
+
+      <p>Solitary confinement therefore raises a question that extends beyond prisons or experiments: <strong>how much of our ordinary experience is shaped by the stimulus constantly around us?</strong></p>
+
+      <h3>SOURCES</h3>
+
+      <p><strong>[1]</strong> Wikipedia — <em>Solitary confinement</em></p>
+
+      <p><strong>[2]</strong> <em>The Resource Team: A Case Study of a Solitary Confinement Reform in Oregon</em> — PLOS ONE, 2023</p>
+
+      <p><strong>[3]</strong> Stuart Grassian — research on the psychological effects of solitary confinement / SHU syndrome</p>
+    `
   }
 ];
 
@@ -180,25 +279,25 @@ document.querySelectorAll(".filter").forEach(btn=>btn.onclick=()=>{
 search.oninput=render;
 
 const thoughts=[
- "why do we remember embarrassing moments from four years ago but forget what we had for lunch yesterday?",
- "how many of your opinions are actually yours — and how many did you inherit without noticing?",
- "why does music sometimes make a memory feel closer than a photograph?",
- "what if being curious is more useful than always being certain?",
- "why do we judge a person in seconds and then spend months proving ourselves right?"
+  "why do we remember embarrassing moments from four years ago but forget what we had for lunch yesterday?",
+  "how many of your opinions are actually yours — and how many did you inherit without noticing?",
+  "why does music sometimes make a memory feel closer than a photograph?",
+  "what if being curious is more useful than always being certain?",
+  "why do we judge a person in seconds and then spend months proving ourselves right?"
 ];
 
 document.getElementById("thoughtBtn").onclick=()=>{
- const el=document.getElementById("thought");
- el.style.opacity=0;
- setTimeout(()=>{
-   el.textContent=thoughts[Math.floor(Math.random()*thoughts.length)];
-   el.style.opacity=1
- },180);
+  const el=document.getElementById("thought");
+  el.style.opacity=0;
+  setTimeout(()=>{
+    el.textContent=thoughts[Math.floor(Math.random()*thoughts.length)];
+    el.style.opacity=1
+  },180);
 };
 
 document.getElementById("themeBtn").onclick=()=>{
- document.body.classList.toggle("dark");
- localStorage.setItem("aahuti-dark",document.body.classList.contains("dark"));
+  document.body.classList.toggle("dark");
+  localStorage.setItem("aahuti-dark",document.body.classList.contains("dark"));
 };
 
 if(localStorage.getItem("aahuti-dark")==="true")document.body.classList.add("dark");
