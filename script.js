@@ -176,7 +176,7 @@ const posts = [
 
       <h3>MY EXPERIENCE</h3>
 
-      <img src="images/solitary-confinement-experiment.jpg" alt="The room used for my 8-hour personal isolation experiment">
+      <img src="solitary-confinement-experiment.jpeg.jpeg" alt="The room used for my 8-hour personal isolation experiment">
 
       <p><em>The room where I conducted my 8-hour personal isolation experiment.</em></p>
 
