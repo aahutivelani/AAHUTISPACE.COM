@@ -74,7 +74,7 @@ const posts = [
       <h3>9. The Google Effect</h3>
       <p><strong>The Google effect</strong> is the tendency to forget information that we believe can be easily found online, because our brain remembers where to find the information rather than the information itself.</p>
 
-      <p>The Google effect is basically your brain saying, <strong>“Why memorize it when Google exists?”</strong> Instead of storing facts in our memory, we often remember how to <em>access</em> them. For example, you might forget the capital of a country but instantly remember that you can Google it in two seconds. The internet has become an external memory bank, so our brains sometimes save their energy for remembering <em>where</em> information is rather than <em>what</em> the information actually is.</p>
+      <p>The Google effect is basically your brain saying, <strong>“Why memorize it when Google exists?”</strong> Instead of storing facts in our memory, we often remember how to <em>access</em> them. For example, you might forget the capital of a country but instantly remember that you can Google it in two seconds. The internet has become an external memory bank, so our brains sometimes save their energy for remembering <em>where</em> information is rather than <em>what</em> the information actually was.</p>
 
       <h3>10. The Framing Effect</h3>
       <p><strong>Framing effect</strong> is a cognitive bias where people's decisions change depending on how options or statements are framed, even when they are logically identical.</p>
@@ -235,75 +235,91 @@ const posts = [
   }
 ];
 
-const postsEl=document.getElementById("posts");
-const search=document.getElementById("search");
-const count=document.getElementById("count");
-let active="all";
+const postsEl = document.getElementById("posts");
+const search = document.getElementById("search");
+const count = document.getElementById("count");
+let active = "all";
 
 function render(){
-  const q=search.value.toLowerCase().trim();
-  const filtered=posts.filter(p=>(active==="all"||p.category===active) &&
-    `${p.title} ${p.excerpt} ${p.category}`.toLowerCase().includes(q));
-  postsEl.innerHTML=filtered.map(p=>`
+  const q = search.value.toLowerCase().trim();
+
+  const filtered = posts.filter(p =>
+    (active === "all" || p.category === active) &&
+    `${p.title} ${p.excerpt} ${p.category}`.toLowerCase().includes(q)
+  );
+
+  postsEl.innerHTML = filtered.map(p => `
     <article class="post" data-id="${p.id}">
-      <div><span class="tag">${p.category} · ${p.read}</span>
-      <h3>${p.title}</h3><p>${p.excerpt}</p></div>
+      <div>
+        <span class="tag">${p.category} · ${p.read}</span>
+        <h3>${p.title}</h3>
+        <p>${p.excerpt}</p>
+      </div>
       <span class="read">read this →</span>
-    </article>`).join("") || `<p>No thoughts found. Try another search.</p>`;
-  count.textContent=`${filtered.length} ${filtered.length===1?"post":"posts"}`;
-  document.querySelectorAll(".post").forEach(el=>el.onclick=()=>openArticle(+el.dataset.id));
+    </article>
+  `).join("") || `<p>No thoughts found. Try another search.</p>`;
+
+  count.textContent = `${filtered.length} ${filtered.length === 1 ? "post" : "posts"}`;
+
+  document.querySelectorAll(".post").forEach(el => {
+    el.onclick = () => openArticle(+el.dataset.id);
+  });
 }
 
 function openArticle(id){
-  const p=posts.find(x=>x.id===id);
+  const p = posts.find(x => x.id === id);
 
-  document.getElementById("articleContent").innerHTML=`
+  document.getElementById("articleContent").innerHTML = `
     <div class="article-tag">${p.category} · ${p.read}</div>
     <h2 class="article-title">${p.title}</h2>
     <div class="article-body">${p.body}</div>
-    <div id="giscus-container"></div>
+
+    <div id="free-comments-container" style="margin-top:50px;">
+      <div id="free-comments"></div>
+    </div>
   `;
 
-  const giscusContainer=document.getElementById("giscus-container");
+  const commentsContainer = document.getElementById("free-comments-container");
 
-  const script=document.createElement("script");
-  script.src="https://giscus.app/client.js";
-  script.setAttribute("data-repo","aahutivelani/AAHUTISPACE.COM");
-  script.setAttribute("data-repo-id","R_kgDOUiqsIg");
-  script.setAttribute("data-category","COMMENTS");
-  script.setAttribute("data-category-id","DIC_kwDOUiqsIs4DGwWK");
-  script.setAttribute("data-mapping","specific");
-  script.setAttribute("data-term",`aahutispace-post-${p.id}`);
-  script.setAttribute("data-strict","0");
-  script.setAttribute("data-reactions-enabled","1");
-  script.setAttribute("data-emit-metadata","0");
-  script.setAttribute("data-input-position","bottom");
-  script.setAttribute("data-theme","preferred_color_scheme");
-  script.setAttribute("data-lang","en");
-  script.setAttribute("crossorigin","anonymous");
-  script.async=true;
+  const commentsScript = document.createElement("script");
 
-  giscusContainer.appendChild(script);
+  commentsScript.src = "https://freecomments.io/embed.js";
+  commentsScript.setAttribute(
+    "data-site-key",
+    "7a9d273fb9024a7bb4fcebd10f754f3e"
+  );
+
+  commentsScript.async = true;
+
+  commentsContainer.appendChild(commentsScript);
 
   document.getElementById("articleDialog").showModal();
 }
 
-document.getElementById("closeArticle").onclick=()=>document.getElementById("articleDialog").close();
+document.getElementById("closeArticle").onclick = () =>
+  document.getElementById("articleDialog").close();
 
-document.getElementById("articleDialog").addEventListener("click",e=>{
-  if(e.target.id==="articleDialog")e.target.close()
+document.getElementById("articleDialog").addEventListener("click", e => {
+  if(e.target.id === "articleDialog"){
+    e.target.close();
+  }
 });
 
-document.querySelectorAll(".filter").forEach(btn=>btn.onclick=()=>{
-  document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active"));
-  btn.classList.add("active");
-  active=btn.dataset.filter;
-  render();
+document.querySelectorAll(".filter").forEach(btn => {
+  btn.onclick = () => {
+    document.querySelectorAll(".filter").forEach(x =>
+      x.classList.remove("active")
+    );
+
+    btn.classList.add("active");
+    active = btn.dataset.filter;
+    render();
+  };
 });
 
-search.oninput=render;
+search.oninput = render;
 
-const thoughts=[
+const thoughts = [
   "why do we remember embarrassing moments from four years ago but forget what we had for lunch yesterday?",
   "how many of your opinions are actually yours — and how many did you inherit without noticing?",
   "why does music sometimes make a memory feel closer than a photograph?",
@@ -311,20 +327,30 @@ const thoughts=[
   "why do we judge a person in seconds and then spend months proving ourselves right?"
 ];
 
-document.getElementById("thoughtBtn").onclick=()=>{
-  const el=document.getElementById("thought");
-  el.style.opacity=0;
-  setTimeout(()=>{
-    el.textContent=thoughts[Math.floor(Math.random()*thoughts.length)];
-    el.style.opacity=1
-  },180);
+document.getElementById("thoughtBtn").onclick = () => {
+  const el = document.getElementById("thought");
+
+  el.style.opacity = 0;
+
+  setTimeout(() => {
+    el.textContent =
+      thoughts[Math.floor(Math.random() * thoughts.length)];
+
+    el.style.opacity = 1;
+  }, 180);
 };
 
-document.getElementById("themeBtn").onclick=()=>{
+document.getElementById("themeBtn").onclick = () => {
   document.body.classList.toggle("dark");
-  localStorage.setItem("aahuti-dark",document.body.classList.contains("dark"));
+
+  localStorage.setItem(
+    "aahuti-dark",
+    document.body.classList.contains("dark")
+  );
 };
 
-if(localStorage.getItem("aahuti-dark")==="true")document.body.classList.add("dark");
+if(localStorage.getItem("aahuti-dark") === "true"){
+  document.body.classList.add("dark");
+}
 
 render();
