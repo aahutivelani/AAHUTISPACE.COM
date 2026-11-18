@@ -1,3 +1,4 @@
+
 const posts = [
   {
     id:1,
@@ -117,19 +118,9 @@ const posts = [
 
       <p>Due to constant content consumption, we have successfully reduced our attention span. This attention that now gets distracted by 10 various mind-numbing activites, has led us to a modern epidemic – stolen focus. It refers to the state of collapsing attention spans and the decreasing ability to concentrate deeply on a given task at a time. Popularized by journalist Johann Hari in his best-selling book Stolen Focus, the concept proves that this is not an individual failure of willpower, but the result of external forces and technical algorithms that are designed to hijack our attention for profit. In laymen language we have almost too successfully destroyed our cognition while using smartphones or if I may, due to using smartphones.</p>
 
-      <p>Another activity that requires us to process is reading. Nicholas Carr, the author of ‘the shallows – what the internet does to our brain’, comments on the transforming reading pattern in this generation. Carr writes, "As our ancestors imbued their minds with the discipline to follow a line of argument or narrative through a succession of printed pages, they became more contemplative, reflective, and imaginative". For this reason, one could contend that people living in word-based cultures are more likely to see life as an opportunity to pursue that which is true, good, and beautiful [Wilson 2011]. He compares reading from books vs digitally, an action that requires our brain to imagine, introspect and understand and how it differs by its medium. Carr cites numerous studies that have shown that people do not read material on a screen in the same way in which they read printed material. We devote less attention to what we read on a screen. We are less immersed in it. We scan. We browse. We multitask. Of course, there is a time and place for this less attentive kind of reading, but our technologies are making this the dominant, and in many cases exclusive, mode of reading for many people. We are losing our ability to think deeply and creatively.</p>
+      <p>Another activity that requires us to process is reading. Nicholas Carr, the author of ‘the shallows – what the internet does to our brain’, comments on the transforming reading pattern in this generation. Carr writes, "As our ancestors imbued their minds with the discipline to follow a line of argument or narrative through a succession of printed pages, they became more contemplative, reflective, and imaginative". For this reason, one could contend that people living in word-based cultures are more likely to see life as an opportunity to pursue that which is true, good, and beautiful [Wilson 2011]. He compares reading from books vs digitally, an action that requires our brain to imagine, introspect and understand and how it differs by its medium. Carr cites numerous studies that have shown that people do not read material on a screen in the same way in which they read printed material. We devote less attention to what we read on a screen. We are less immersed in it. We scan. We browse. We multitask. Of course, there is a time and place for this less attentive kind of reading, but our technologies are making this the dominant, and in many cases exclusive, mode of reading for many people.</p>
 
-      <p>Our brains are running around in "the shallows." [Wilson 2011] Carr had experienced this himself as he noticed that he would not be able to concentrate into a few pages in the book and his mind would ask for continuous stimulations. This is something many readers might be experiencing including myself. Before I got a smartphone, I could sit in a single position for hours and read books without my attention breaking even once. Now that I have gotten myself a smartphone, reading books again has become a slightly boring activity. Who would not want to watch social media where all you have to do is not think? All you have to spend, is time. But do you know, that all that little device needs to destroy you, is your time. While reading books or other brainstorming activities needs your attention, the smartphone simply steals it. And with your attention, goes your mind, one scroll at a time.</p>
-
-      <p>Lastly, and most importantly, a man’s ability to think and analyse, also termed as cognition, is shrinking alarmingly. Where early philosophers could think and contemplate till its fathomable depths, this generations declines questioning the present situation or travel the depths of a topic solemnly. Why would anyone use their energy into thinking if they could simply search it on the internet? We are reluctant to use the brain for simple everyday tasks. And that, dear readers, is quite disturbing.</p>
-
-      <p>At this point, an awaken man would want to trace his route back from this alluring abyss. What you shall know is that technology is a double-edged sword. Something that you cannot escape. So, how can a person truly run away from such an important device in this generation? The first step to rewiring back is to get aware. Before blaming the smartphone, observe how often you reach for it mindlessly. Once you catch yourself reaching for the screen instead of the moment, you have already won half the battle. Reducing your usage and replacing brainrot content with insightful news or articles rewires the neuroplasticity of your brain. Avoiding technology is as effective as trying to escape your own shadow.</p>
-
-      <p>Hence, true healing lies in giving control to your brain instead of your smartphone. Another solution could be adopting slow dopamine releasing habits. Dopamine is often called the "feel-good" chemical, but that's only one part of the story. This neurotransmitter—a chemical messenger in your brain—plays a crucial role in motivation, reward, and pleasure. When you receive a text, like, or notification, your brain releases a small hit of dopamine. Over time, your brain craves these mini-rewards, creating a cycle that keeps you reaching for your phone. Think of dopamine like your brain's reward system. Every ping, buzz, or flash from your phone triggers this system, training your brain to expect and seek these digital rewards constantly. This process, called intermittent reinforcement, is the same mechanism that makes gambling addiction [ Wald, as cited in Fernandez, 2025].</p>
-
-      <p>The global average person checks their phone between 96 to 144 times daily, roughly once every 10 minutes. In the United States, this frequency jumps even higher, with the ConsumerAffairs 2026 Cell Phone Statistics revealing an average of 186 to 205 pickups per day. Its time to be smart, just like your phone and break these statistics. At the end, smartphones are neither heroes nor villains so let’s not name them saviours or destroyers of our generation. Instead, let us create awareness about the impact of constant smartphone usage on rewiring our capacity to think deep.</p>
-
-      <p>As the saying goes, technology is a useful servant but a dangerous master. Let us take the reins in our hands and make ourselves more mindful. After all, the highest change humanity can get is a better way of thinking. So next time, before you unlock your phone, try unlocking your mind.</p>
+      <p>Let us take the reins in our hands and make ourselves more mindful. After all, the highest change humanity can get is a better way of thinking. So next time, before you unlock your phone, try unlocking your mind.</p>
 
       <p><strong>As I leave with a final thought, dear reader, our phones have become smart but let it not be cost of us becoming the opposite.</strong></p>
     `
@@ -188,9 +179,9 @@ const posts = [
 
       <p>What surprised me most was how much my attention began searching for something, anything, to focus on. A room that had seemed completely ordinary suddenly felt filled with details I had never paid attention to. Yet none of them were enough to replace the constant stream of stimulation I was used to. I paid attention to the train sounds near my house and acknowledged small details of the room I had never noticed before.</p>
 
-      <p>The experience made me realise that boredom is not simply the absence of something interesting. When there is very little external stimulation, the mind actively starts looking for it.</p>
+      <p>The experience made me realise that boredom is not simply the absence of something interesting.</p>
 
-      <p>For the first three hours, I was kind of energetic since I had freshly started, but eventually my mood became dim. During my stay, I began to understand how a prisoner or juvenile offender in such a condition might feel. I began replaying small things in my head about my day, and my thoughts became loud.</p>
+      <p>During my stay, I began to understand how a prisoner or juvenile offender in such a condition might feel. I began replaying small things in my head about my day, and my thoughts became loud.</p>
 
       <p>Though in my experience, I could see an important difference, since I had voluntarily chosen to try such an experiment and the individuals in such confinement might be there involuntarily. However, I noticed a few common things:</p>
 
@@ -352,5 +343,93 @@ document.getElementById("themeBtn").onclick = () => {
 if(localStorage.getItem("aahuti-dark") === "true"){
   document.body.classList.add("dark");
 }
+
+
+// ==========================================
+// LITTLE THOUGHTS — separate from long blogs
+// ==========================================
+
+const littleThoughts = [
+  {
+    id: "poor-honesty",
+    category: "little thoughts",
+    read: "3 min read",
+    title: "The Poor Can't Afford Honesty.",
+    excerpt: "What if honesty is easy only for those who can afford it?",
+    body: `
+      <p>I have always believed that honesty is a quality everyone should have. That telling the truth, regardless of the circumstances, is the right thing to do. Until recently, I never really questioned that belief.</p>
+
+      <p>During a visit to an NGO, I noticed something that initially made me quite uncomfortable. While I was distributing the toys and chocolates, the children and their mothers kept asking for more than they were supposed to receive. They lied about not getting them, even though they had already received them once. I recall a mother hiding the toys under her sari. My first reaction was anger. Why lie? Why ask for more than what is being offered politely? Why can't people simply be honest?</p>
+
+      <p>But then I went home with a thought I couldn't quite shake off.</p>
+
+      <p><strong>What if honesty is easy only for those who can afford it?</strong></p>
+
+      <p>We speak about integrity as though everyone has the same freedom to practise it. We tell people not to lie, not to cheat, not to manipulate under any circumstances. And while I don't think dishonesty suddenly becomes right because someone is poor, I have started to wonder whether we are sometimes too quick to judge it.</p>
+
+      <p>Perhaps someone asking for a little more isn't thinking about the morality of the situation as much as they are thinking about what that little more could mean for them. What looks like greed from a distance is desperation up close. Perhaps a few extra rupees mean something to someone that they could never mean to us. Maybe lying gets them an extra meal or a few more clothes to save them from shivering in the cruel cold of the night.</p>
+
+      <p>It is easy to stand firmly by your principles when your next meal isn't dependent on them. It is easy to tell someone to be honest when the consequences of honesty won't leave them with even less than they already have.</p>
+
+      <p>And that is not to say that every poor person lies, or that poverty excuses every dishonest act. It doesn't. But I think we need to make room for a conversation about circumstances before we make conclusions about character.</p>
+
+      <p>I went there feeling disappointed in what I saw. I came back questioning how easily I had judged it.</p>
+
+      <p>Maybe the poor aren't necessarily less honest. Maybe they are simply living in a world where honesty can be expensive, where doing everything by the book doesn't always guarantee that they will have enough.</p>
+
+      <p>They are left with a choice hovering in their heads: be honest and accept the little you get, or lie and reduce one of the worries of daily life. The second choice could perhaps give them more food, clothes, or a smile from their family. Would you, under those circumstances, be desperate enough to lie?</p>
+
+      <p>We romanticise honesty as a universal virtue, but perhaps we overlook the privilege of being able to tell the truth without fearing what it might cost us.</p>
+
+      <p>And that is a rather uncomfortable thought to sit with.</p>
+    `
+  }
+];
+
+function renderLittleThoughts(){
+  const littleThoughtsEl = document.getElementById("littleThoughtCards");
+  if(!littleThoughtsEl) return;
+
+  littleThoughtsEl.innerHTML = littleThoughts.map(thought => `
+    <article class="little-thought-card" data-little-id="${thought.id}">
+      <div>
+        <span class="tag">${thought.category} · ${thought.read}</span>
+        <h3>${thought.title}</h3>
+        <p>${thought.excerpt}</p>
+      </div>
+      <span class="read">read this →</span>
+    </article>
+  `).join("");
+
+  littleThoughtsEl.querySelectorAll(".little-thought-card").forEach(card => {
+    card.onclick = () => openLittleThought(card.dataset.littleId);
+  });
+}
+
+function openLittleThought(id){
+  const thought = littleThoughts.find(item => item.id === id);
+  if(!thought) return;
+
+  document.getElementById("articleContent").innerHTML = `
+    <div class="article-tag">${thought.category} · ${thought.read}</div>
+    <h2 class="article-title">${thought.title}</h2>
+    <div class="article-body">${thought.body}</div>
+
+    <div id="free-comments-container" style="margin-top:50px;">
+      <div id="free-comments"></div>
+    </div>
+  `;
+
+  const commentsContainer = document.getElementById("free-comments-container");
+  const commentsScript = document.createElement("script");
+  commentsScript.src = "https://freecomments.io/embed.js";
+  commentsScript.setAttribute("data-site-key", "7a9d273fb9024a7bb4fcebd10f754f3e");
+  commentsScript.async = true;
+  commentsContainer.appendChild(commentsScript);
+
+  document.getElementById("articleDialog").showModal();
+}
+
+renderLittleThoughts();
 
 render();
