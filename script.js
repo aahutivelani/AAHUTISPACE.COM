@@ -1,4 +1,3 @@
-
 const posts = [
   {
     id:1,
@@ -223,7 +222,51 @@ const posts = [
 
       <p><strong>[3]</strong> Stuart Grassian — research on the psychological effects of solitary confinement / SHU syndrome</p>
     `
+  },
+
+  {
+    id:4,
+    category:"thoughts",
+    read:"5 min read",
+    title:"When Living Becomes Documenting",
+    excerpt:"Have we become so occupied with documenting our experiences that we sometimes forget to actually experience them?",
+    body:`
+      <p>We have always wanted to share good things with people. When we come across something beautiful or experience something wonderful, we want our loved ones to experience it too, or at least know about it. There's nothing wrong with that. We are social animals, and we naturally seek feedback, appreciation, reassurance and shared experiences.</p>
+
+      <p>But I think social media has significantly changed the way we approach this desire.</p>
+
+      <p>Previously, receiving appreciation was often a natural interaction. You wore a good dress, a friend complimented you, and you felt happy. You enjoyed the appreciation, and that was that.</p>
+
+      <p>Today, however, we have introduced measurable validation into these experiences. Likes, comments, views and shares have become indicators of appreciation. When you post a picture, you don't just share it; somewhere in your mind, you also anticipate how people will react to it.</p>
+
+      <p>Consider something as simple as liking a reel about kindness. The first thought for some people might not be how meaningful the reel is, but how good they would look by liking it. The action remains the same, but the intention behind it changes.</p>
+
+      <p>I believe social media hasn't created our tendency to seek approval. It has taken an existing human tendency and turned it into something much bigger. What was once an occasional desire for appreciation has become a constant part of our lives.</p>
+
+      <p>We have also started experiencing certain things through the imagined reactions of other people.</p>
+
+      <p>Think about visiting a beautiful place. Sometimes, before even reaching there, we have already decided that we want to post a story about it. We want a good picture. We want something worth sharing. And somewhere in the process, we might become more occupied with how the experience will look to others than with how we are actually experiencing it.</p>
+
+      <p>Of course, taking pictures isn't wrong. Wanting memories isn't wrong either. But when did documenting an experience become almost as important as experiencing it?</p>
+
+      <p>We have normalised this behaviour to such an extent that visiting a place and not taking pictures almost seems unusual. Look around, and you'll find thousands of people photographing the same beautiful view. How many of them put their phones away and simply admire the place?</p>
+
+      <p>I think we have gone a step further than simply sacrificing our experiences for appreciation. We have stopped considering it a sacrifice altogether. We have been doing it for so long that we rarely question what we might be giving up.</p>
+
+      <p>And I believe this is reversible.</p>
+
+      <p>Recognising the problem is the first step towards changing it. We don't have to stop taking pictures or sharing our experiences. We simply need to become conscious of why we are doing these things and what we might be missing in the process.</p>
+
+      <p>The next time you visit somewhere beautiful, perhaps pause before taking out your phone. Take a picture or two if you want to preserve the memory. But also give yourself the time to actually admire the place.</p>
+
+      <p>Because years later, when you want to revisit that experience, you might have a photograph or two to remind you where you went. But how much of the actual experience will you remember?</p>
+
+      <p>Ultimately, it is your choice. You can document your experiences, but you can also choose to be present in them.</p>
+
+      <p><strong>The question is: Are you ready to sacrifice the moment for the memories of the moment?</strong></p>
+    `
   }
+
 ];
 
 const postsEl = document.getElementById("posts");
@@ -240,19 +283,19 @@ function render(){
   );
 
   postsEl.innerHTML = filtered.map(p => `
-    <article class="post" data-id="${p.id}">
+    <article class="post-card" data-id="${p.id}">
       <div>
-        <span class="tag">${p.category} · ${p.read}</span>
+        <span class="category">${p.category} · ${p.read}</span>
         <h3>${p.title}</h3>
         <p>${p.excerpt}</p>
       </div>
-      <span class="read">read this →</span>
+      <span class="read-more">read this →</span>
     </article>
   `).join("") || `<p>No thoughts found. Try another search.</p>`;
 
   count.textContent = `${filtered.length} ${filtered.length === 1 ? "post" : "posts"}`;
 
-  document.querySelectorAll(".post").forEach(el => {
+  document.querySelectorAll(".post-card").forEach(el => {
     el.onclick = () => openArticle(+el.dataset.id);
   });
 }
